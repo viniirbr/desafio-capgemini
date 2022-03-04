@@ -1,0 +1,14 @@
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-list {
+    display: flex;
+}
+
+.number-input {
+    height: 30px;
+    width: 50px;
+    text-align: center;
+}

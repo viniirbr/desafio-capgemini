@@ -1,21 +1,17 @@
 import promptSync from 'prompt-sync';
+import { countDifferenceByN } from './countDifferenceByN.js';
+import { turnStringToArray } from './turnStringToArray.js';
+
+
+//TODO: verificar casos, como o que a diferença é n=0
 
 const prompt = promptSync();
 
-var array = prompt('Insira o array  ');
+const inputString = prompt('Insira o array  ');
+const inputArray = turnStringToArray(inputString)
+console.log(inputArray)
 var dif = prompt('Defina a diferença que será contada  ');
 
-export function countDifferenceByN(array, n) {
-    let count = 0;
 
-    for (let element of array) {
-        for (let otherElement of array) {
-            if ((element != otherElement) && (element-otherElement == n)) {
-                count++
-            }
-        }
-    }
-    return count
-}
 
-console.log(countDifferenceByN(array, dif));
+console.log(countDifferenceByN(inputArray, dif));

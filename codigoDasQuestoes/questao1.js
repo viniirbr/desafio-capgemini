@@ -1,23 +1,18 @@
 import promptSync from 'prompt-sync';
+import { medianOfOddArray } from './medianOfOddArray.js';
+import { turnStringToArray } from './turnStringToArray.js';
 
 const prompt = promptSync();
 
-var n = prompt('Insira o array ');
 
-export function medianOfOddArray(array) {
-    const arrayLength = array.length;
-    if (arrayLength % 2 == 0) {
-        return null;
-    } else {
-        const medianPosition = Math.floor(arrayLength/2);
-        return array[medianPosition];
-    }
-}
+var n = prompt('Exemplos de formatos válidos:\n12345\n[12,13,14]\nInsira o array... ');
 
-const median = medianOfOddArray(n)
+const arrayOfNumbers = turnStringToArray(n)
+
+const median = medianOfOddArray(arrayOfNumbers)
 
 if (median == null) {
     console.log("ERRO: Verifique a estrutura do array que você digitou")
 } else {
-    console.log("Mediana: ", medianOfOddArray(n))
+    console.log("Mediana: ", median)
 }

@@ -7,3 +7,5 @@ export function medianOfOddArray(array) {
         return array[medianPosition];
     }
 }
+
+console.log(medianOfOddArray([20,30,4,50,60]))

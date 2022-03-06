@@ -26,9 +26,10 @@
                                               
 ## ⚙️Como rodar o programa
   1. Certifique-se de ter instalado no seu computador o [Node.js](https://nodejs.dev/) para rodar o arquivo JavaScript diretamente do terminal;
-  2. A partir do diretório <i>desafio-capgemini</i>, navegue no seu terminal para a pasta <i>codigoDasQuestoes</i>
+  2. Instale o módulo _prompt-sync_ com o comando `npm install prompt-sync`
+  3. A partir do diretório <i>desafio-capgemini</i>, navegue no seu terminal para a pasta <i>codigoDasQuestoes</i>
   <p align='center'><img src='https://user-images.githubusercontent.com/35473934/156940107-285f6c03-75ca-4a19-b7c2-015a286319c7.png' width='600px'></p>
-  3. Execute o programa com o comando 
+  4. Execute o programa com o comando 
   
   `node questao<numero da questao>`
   

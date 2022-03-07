@@ -25,6 +25,14 @@
 - CSS3 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" width='50px'/>
                                               
 ## ⚙️Como rodar o programa
+ #### Há basicamente duas maneiras de rodar os códigos que solucionam o desafio: a primeira é uma página em HTML (ainda sem estilização) e a segunda é através do terminal, utilizando o Node.js. Vamos ver como utilizar cada uma.
+ 
+ ### Página
+- Acesse a página [aqui](https://viniirbr.github.io/desafio-capgemini/).
+ Nela você poderá definir o array preenchendo os campos de <i>input</i> e acrescentando os dígitos através do botão de '+'. A função será executada quando o botão de 'confirmar' for clicado. A saída poderá ser visualizada numa área parecida visualmente com o terminal.
+<p align='center'><img src='https://user-images.githubusercontent.com/35473934/156954624-bcb04c6c-015e-4512-b3c1-682f6068a326.png' width='700px'></p>
+ 
+ ### Terminal
   1. Certifique-se de ter instalado no seu computador o [Node.js](https://nodejs.dev/) para rodar o arquivo JavaScript diretamente do terminal;
   2. Instale o módulo _prompt-sync_ com o comando `npm install prompt-sync`
   3. A partir do diretório <i>desafio-capgemini</i>, navegue no seu terminal para a pasta <i>codigoDasQuestoes</i>

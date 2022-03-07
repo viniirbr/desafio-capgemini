@@ -1,6 +1,6 @@
 import { medianOfOddArray } from "./codigoDasQuestoes/medianOfOddArray.js"
 import { countDifferenceByN } from "./codigoDasQuestoes/countDifferenceByN.js"
-import { formatString } from "./formatString.js"
+import { formatString } from "./codigoDasQuestoes/formatString.js"
 
 //Question 1
 const addInputButtonQuestion1 = document.querySelector('[add-button-question1]')

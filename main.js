@@ -26,7 +26,7 @@ confirmInputButtonQuestion1.addEventListener('click', () => {
     let median = medianOfOddArray(arrayOfNumbers)
 
     if (median == null) {
-        outputValueQuestion1.textContent = 'O array inserido contém um número par de elementos'
+        outputValueQuestion1.textContent = 'O array inserido contém uma quantidade par de elementos. Insira um array com quantidade ímpar.'
     } else {
         outputValueQuestion1.textContent = "Mediana: " + median;
     }

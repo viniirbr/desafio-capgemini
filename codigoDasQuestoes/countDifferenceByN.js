@@ -34,7 +34,7 @@ export function countDifferenceByN(array, n) {
             }
         }
     } else {
-
+        return null;
     }
     return arrayOfPairs.length
 }

@@ -5,7 +5,7 @@ import { turnStringToArray } from './turnStringToArray.js';
 const prompt = promptSync();
 
 
-var n = prompt('Exemplos de formatos válidos:\n12345\n[12,13,14]\nInsira o array... ');
+var n = prompt('Digite um array no formato [n1,n2,n3...], como o array [1,5,4,8]. Insira o array: ');
 
 const arrayOfNumbers = turnStringToArray(n)
 

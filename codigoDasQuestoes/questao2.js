@@ -3,15 +3,15 @@ import { countDifferenceByN } from './countDifferenceByN.js';
 import { turnStringToArray } from './turnStringToArray.js';
 
 
-//TODO: verificar casos, como o que a diferença é n=0
 
 const prompt = promptSync();
 
-const inputString = prompt('Exemplos de formatos válidos:\n12345\n[12,13,14]\nInsira o array... ');
+const inputString = prompt('Digite um array no formato [n1,n2,n3...], como o array [1,51,47,8,6]. Insira o array: ');
 const inputArray = turnStringToArray(inputString)
 
 var dif = prompt('Defina a diferença que será contada...  ');
 
 
-
-console.log(countDifferenceByN(inputArray, dif));
+if (countDifferenceByN(inputArray, dif) == null) {
+    console.log('O valor da diferença não pode ser 0')
+} else console.log(countDifferenceByN(inputArray, dif));

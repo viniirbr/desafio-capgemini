@@ -1,5 +1,5 @@
 import promptSync from 'prompt-sync';
-import { formatString } from '../formatString.js';
+import { formatString } from './formatString.js';
 
 const prompt = promptSync();
 

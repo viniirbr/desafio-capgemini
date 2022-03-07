@@ -7,10 +7,10 @@ import { turnStringToArray } from './turnStringToArray.js';
 
 const prompt = promptSync();
 
-const inputString = prompt('Insira o array  ');
+const inputString = prompt('Exemplos de formatos válidos:\n12345\n[12,13,14]\nInsira o array... ');
 const inputArray = turnStringToArray(inputString)
-console.log(inputArray)
-var dif = prompt('Defina a diferença que será contada  ');
+
+var dif = prompt('Defina a diferença que será contada...  ');
 
 
 

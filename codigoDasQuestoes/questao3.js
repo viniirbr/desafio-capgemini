@@ -1,3 +1,8 @@
+import promptSync from 'prompt-sync';
+const prompt = promptSync();
+
+const message = prompt('Digite aqui a mensagem que será criptografada: ')
+
 
 function createArrayOfArrays (string, number) {
     var arrayOfArrays = [];
@@ -7,7 +12,7 @@ function createArrayOfArrays (string, number) {
     for (let letter of string) {
         
         if ((counter % number) === 0) {
-            if (arrayToBeInserted.length != 0) { //manda o arrayInserted para o arrayOfArrays e zera 
+            if (arrayToBeInserted.length != 0) { 
                 arrayOfArrays.push(arrayToBeInserted)
                 arrayToBeInserted = [letter]
             } else arrayToBeInserted.push(letter)          
@@ -25,7 +30,7 @@ function createArrayOfArrays (string, number) {
 
 }
 
-function formatString(string) {
+export function formatString(string) {
     const stringWithoutSpace = string.replace(/\s/g, '');
 
     const sqrtOfStringLength = Math.sqrt(stringWithoutSpace.length);
@@ -51,5 +56,5 @@ function formatString(string) {
 
 
 
-console.log(formatString('o rato roeu a roupa do rei de roma'))
+console.log(formatString(message))
 

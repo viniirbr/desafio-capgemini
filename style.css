@@ -27,10 +27,17 @@
 .output-area {
     background: black;
     height: 200px;
+    width: 80%;
+    margin: 0 auto;
     padding: 10px;
 }
 
 .output-value {
     color: white;
     font-size: 2rem;
+}
+
+.input-number-difference-area {
+    display: flex;
+    align-items: center;
 }
